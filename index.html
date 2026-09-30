@@ -252,7 +252,7 @@ analyzeBtn.onclick = async () => {
 
         const data = await resposta.json();
 
-        if (!response.ok) {
+        if (!resposta.ok) {
             throw new Error(
                 data.erro || "Erro ao consultar a IA."
             );
