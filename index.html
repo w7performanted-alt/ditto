@@ -250,7 +250,7 @@ analyzeBtn.onclick = async () => {
             body: formData
         });
 
-        const data = await response.json();
+        const data = await resposta.json();
 
         if (!response.ok) {
             throw new Error(
