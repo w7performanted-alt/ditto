@@ -245,7 +245,7 @@ analyzeBtn.onclick = async () => {
 
         formData.append("imagem", selectedFile);
 
-        fetch("https://ditto-a7yv.onrender.com/analisar"
+        const resposta = await fetch("https://ditto-a7yv.onrender.com/analisar", {
             method: "POST",
             body: formData
         });
